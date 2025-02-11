@@ -9,9 +9,13 @@ return {
 					null_ls.builtins.formatting.prettier,
 					null_ls.builtins.formatting.black,
 					null_ls.builtins.formatting.isort,
-					-- null_ls.builtins.formatting.powershell_es,
-					-- null_ls.builtins.diagnostics.powershell_es,
-					-- null_ls.builtins.diagnostics.eslint_d,
+					null_ls.builtins.formatting.csharpier,
+					null_ls.builtins.formatting.mdformat,
+					null_ls.builtins.formatting.markdownlint,
+					null_ls.builtins.formatting.prettierd,
+					null_ls.builtins.diagnostics.commitlint,
+					null_ls.builtins.diagnostics.hadolint,
+					null_ls.builtins.diagnostics.markdownlint,
 				},
 			})
 			vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
